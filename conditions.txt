@@ -1,0 +1,11 @@
+Location - Dependent upon the Habitable zone which depends upon the radius of the planet's orbit, the mass of the body itself and the radiative flux of the host star.
+Mass - .1 to 5 earth masses, as the effects of plate tectonics and the possible pressure on the planet have to be survivable. If the atmospheric pressure is to high or to low, water might not be possible on the planet. If the mass is to low the escape velocity of the atmosphere might be too low. The radii are .5 - 1.5 earth radii
+Atmosphere - Needs C, H, N, O, P, S, essential metals, essential micronutrients. Some Heavy metals are required but can be toxic at high levels (ie Zn, Ni, Cu, Cr, As, Cd...) Fixed Nitrogen. There needs to be high CO_2. There needs to be atmospheric transport. Low pressure but not too low. (.1 atm minimum)
+Liquid Water - Water must be able to be in a liquid form. This depends upon temperature and pressure. Review a conversion chart for exact specifics.
+Energy Source - Light from a star must be present for plants to synthesize. Organisms must be able to use chemicals to provide energies to cells. There must be internal heat of the planet which can leak to the surface.
+Magnetic Field - For a planet to have a magnetic field it must have a molten electrically conducting interior, convection in the interior, and a moderately rapid rotation. The reasoning for the need of a magnetic field is to protect from the cosmic radiation and charged particles and solar wind.
+Climate - Climates need to maintain -15 to 115 degrees celsius to maintain habitability.
+Stable Star - A star composed of hydrogen and helium that is in a comfortable area of star cycle.
+Oxygen - The atmosphere must contain stable oxygen.
+Sunlight - The planet must have available sunlight, and must have sunlight hit the whole planet at some point. It must be 0.95 - 1.67 AU. Earth is 1.00 AU.
+Gravity - Up to 3.5 times the gravity of earth and .6 times gravity of earth
