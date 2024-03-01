@@ -1,0 +1,146 @@
+@startuml
+user <|-- Skill
+user <|-- TechUpgrades
+user <|-- SpaceCraft
+user <|-- OutPost
+user <|-- SpaceStation
+user <|-- SolarSystem
+user <|-- LifeForms
+user <|-- Base
+SolarSystem <|-- Planet
+SolarSystem <|-- Base
+SolarSystem <|-- OutPost
+SolarSystem <|-- SpaceStation
+SolarSystem <|-- Resource
+Planet <|-- Base
+Planet <|-- OutPost
+Planet <|-- Resource
+Planet <|-- SpaceStation
+SpaceCraft <|-- TechUpgrades
+SpaceCraft <|-- Resource
+LifeForms <|-- Planet
+LifeForms <|-- SolarSystem
+LifeForms <|-- Resource
+LifeForms <|-- Skill
+Base <-- OutPost
+Base <|-- Resource
+Base <|-- TechUpgrades
+Base <|-- SpaceCraft
+SpaceStation <|-- TechUpgrades
+SpaceStation <|-- Resource
+SpaceStation <|-- Planet
+SpaceStation <|-- SpaceCraft
+
+class user{
+- _name: string
+- _position: string
+- _abilities: List<Skill>
+- _techUpgrades: List<TechUpgrades>
+- _money: int
+- _spaceShips: List<SpaceCraft>
+- _outPosts: List<OutPost>
+- _spaceStations: List<SpaceStation>
+- _currentSolarSystem: SolarSystem
+- _foundLifeForms: List<LifeForms>
+- _bases: List<Base>
+}
+class SolarSystem{
+- _planets: List<Planet>
+- _bases: List<Base>
+- _outPosts: List<OutPost>
+- _spaceStations: List<SpaceStation>
+- _availableResources: List<Resource>
+- _habitableZone: string
+- _description: string
+- _name: string
+}
+class Planet{
+- _hasBase: bool
+- _base: Base
+- _hasOutPost: bool
+- _outPosts: List<OutPost>
+- _availableResources: List<Resource>
+- _isHabitable: bool
+- _isHabited: bool
+- _hasSpaceStation: bool
+- _spaceStation: SpaceStation
+- _description: string
+- _name: string
+}
+class SpaceCraft{
+- _maxSpeed: int
+- _cost: int
+- _maxFuel: int
+- _currentFuel: int
+- _oxygenLevel: float
+- _numPassengers: int
+- _availableSeats: int
+- _totalSeats: int
+- _currentLocation: int
+- _lengthOfJourney: int
+- _destination: int
+- _range: int
+- _techOnBoard: List<TechUpgrades>
+- _resources; List<Resource>
+- _description: string
+- _name: string
+}
+class LifeForms{
+- _advanced: bool
+- _friendly: bool
+- _potenitialFood:bool
+- _neededResources: List<Resource>
+- _skills: List<Skill>
+- _spaceTravel: bool
+- _currentPlanet: Planet
+- _currentSolarSystem: SolarSystem
+- _description: string
+- _name: string
+}
+class TechUpgrades{
+- _cost: string/int
+- _description: string
+- _name: string
+- _grantsAbility: bool
+}
+class OutPost{
+- _habitable: bool
+- _inhabtitedByHumans: bool
+}
+class Base{
+- _description: string
+- _name: string
+- _resourcesGained: List<Resource>
+- _resourcesNeeded: List<Resource>
+- _location: Planet
+- _population: int
+- _tech: List<TechUpgrades>
+- _availableSpaceCraft: List<SpaceCraft>
+}
+class SpaceStation{
+- _description: string
+- _name: string
+- _tech: List<TechUpgrades>
+- _currentLocation: Planet
+- _purpose: string
+- _fuel: int
+- _oxygen: int
+- _population: int
+- _neededResources: List<Resource>
+- _availableSpaceCraft: List<SpaceCraft>
+}
+class Skill{
+- _description: string
+- _name: string
+- _gainedAccess: string
+- _techGain: TechUpgrades
+- _resourcesAvailable: Resource
+- _cost: int
+}
+class Resource{
+- _description: string
+- _name: string
+- _uses: List<string>
+- _tradeValue: int
+}
+@enduml
